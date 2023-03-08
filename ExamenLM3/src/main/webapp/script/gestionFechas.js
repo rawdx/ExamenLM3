@@ -17,7 +17,7 @@ function gestionFechas() {
 			let madrid = new Date(utc.getTime() + 1 * 3600 * 1000);
 
 			document.write("Ciudad: Madrid");
-			document.write("<br>Fecha: " + madrid.getDay() + "-" + madrid.getDate() + "-" + madrid.getFullYear());
+			document.write("<br>Fecha: " + madrid.getDate() + "-" + (madrid.getMonth() + 1) + "-" + madrid.getFullYear());
 			document.write("<br>Hora: " + madrid.getHours() + ":" + madrid.getMinutes() + ":" + madrid.getSeconds());
 			break;
 		case 'paris':
@@ -26,12 +26,12 @@ function gestionFechas() {
 			let paris = new Date(utc.getTime() + 1 * 3600 * 1000);
 
 			document.write("Ciudad: París");
-			document.write("<br>Fecha: " + paris.getDay() + "-" + paris.getDate() + "-" + paris.getFullYear());
+			document.write("<br>Fecha: " + paris.getDate() + "-" + (paris.getMonth() + 1) + "-" + paris.getFullYear());
 			document.write("<br>Hora: " + paris.getHours() + ":" + paris.getMinutes() + ":" + paris.getSeconds());
 			break;
 		case "londres":
 			document.write("Ciudad: Londres");
-			document.write("<br>Fecha: " + utc.getDay() + "-" + utc.getDate() + "-" + utc.getFullYear());
+			document.write("<br>Fecha: " + utc.getDate() + "-" + (utc.getMonth() + 1) + "-" + utc.getFullYear());
 			document.write("<br>Hora: " + utc.getHours() + ":" + utc.getMinutes() + ":" + utc.getSeconds());
 			break;
 		default:
